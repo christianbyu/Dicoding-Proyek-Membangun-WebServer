@@ -14,10 +14,10 @@ app.get('/', (req, res) => {
     res.send('Hello world!\n')
 })
 
-/*
-Optional [ROUTE] '/me'
-[Response] => Dicoding username.
-*/
+app.get('/me', (req, res) => {
+    res.send('Dicoding_sibaay\n')
+})
+
 
 app.listen(PORT, HOST)
 console.log(`Running on http://${HOST}:${PORT}`)
